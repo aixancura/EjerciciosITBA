@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+</head>
+<body>
+    <form action="/registrar" method="post">
+        <div>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" required>
+        </div>   
+
+        <div>
+            <label for="password">Crear Contraseña</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="taller_de_interes">Taller de Interes</label>
+            <select id="taller_de_interes" name="taller_de_interes" required>
+                <option value="" disabled selected>Seleccione un taller</option>
+                <option value="taller1">Taller 1</option>
+                <option value="taller2">Taller 2</option>
+                <option value="taller3">Taller 3</option>
+            </select>
+        </div>
+
+        <div>
+            <span>Taller de Asistencia</span>
+            <input type="radio" id="presencial" name="taller_de_asistencia" value="Presencial" required>
+            <label for="presencial">Presencial</label>
+            
+            <input type="radio" id="virtual" name="taller_de_asistencia" value="Virtual" required>
+            <label for="virtual">Virtual</label>
+        </div>
+
+        <div>
+            <label for="terminos_condiciones">Acepto los terminos y condiciones</label>
+            <input type="checkbox" id="terminos_condiciones" name="tyc" required>
+        </div>
+
+        <div>
+            <label for="comentarios">Comentarios Adicionales</label><br>
+            <textarea id="comentarios" name="comentarios" rows="5" cols="100" placeholder="Comentarios"></textarea>
+        </div>
+        
+        <div>
+            <button type="submit">Inscribirme</button>
+        </div>
+    </form>
+</body>
+</html>
